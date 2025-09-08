@@ -1,0 +1,16 @@
+questionTitle,questionType,questionDescription,correctOptionNumbers,positiveMarks,negativeMarks,questionAnswerExplanation,questionOption1,questionOption2,questionOption3,questionOption4
+Question 1,single-correct,Which Azure Storage Account type is recommended for most modern workloads?,2,1,0,General Purpose v2 supports all features and pricing tiers.,General Purpose v1,General Purpose v2,Blob Storage,Queue Storage
+Question 2,single-correct,Which blob type is best for streaming large media files?,1,1,0,Block blobs are optimized for large sequential uploads.,Block Blob,Append Blob,Page Blob,Archive Blob
+Question 3,single-correct,Which blob type is optimized for log data that grows over time?,2,1,0,Append blobs are ideal for scenarios like logging.,Block Blob,Append Blob,Page Blob,Archive Blob
+Question 4,single-correct,Which blob type is used for virtual hard disk (VHD) files?,3,1,0,Page blobs are designed for random read/write operations.,Block Blob,Append Blob,Page Blob,Cold Blob
+Question 5,single-correct,What feature does Azure Data Lake Storage Gen2 provide for directory-like structures?,4,1,0,ADLS Gen2 supports hierarchical namespace for folders.,Replication,Encryption,Zone redundancy,Hierarchical namespace
+Question 6,single-correct,How can you organize files in ADLS Gen2?,2,1,0,By creating containers and folder structures inside them.,Only using tables,Creating containers and folders,Using queues only,By enabling CDNs
+Question 7,single-correct,Which Azure storage option provides a NoSQL key-value store?,1,1,0,Azure Table Storage is a NoSQL service for structured data.,Table Storage,Queue Storage,Azure Files,Page Blob
+Question 8,single-correct,Which Azure storage service provides reliable message queuing?,2,1,0,Azure Queue Storage is used for message queuing.,Table Storage,Queue Storage,Azure Files,Blob Storage
+Question 9,single-correct,Which Azure storage service supports SMB and NFS protocols?,3,1,0,Azure Files supports both SMB and NFS for file shares.,Blob Storage,Table Storage,Azure Files,Queue Storage
+Question 10,single-correct,Which authentication method avoids sharing account keys directly?,2,1,0,SAS tokens allow fine-grained temporary access without keys.,Shared Key,SAS Token,Firewall Rules,Connection Strings
+Question 11,single-correct,Which authentication option allows integration with Azure AD identities?,3,1,0,Azure AD provides identity-based authentication and RBAC.,Shared Key,SAS Token,Azure AD Integration,Connection String
+Question 12,single-correct,Which RBAC role grants full access to storage accounts?,1,1,0,Storage Account Contributor has full management permissions.,Storage Account Contributor,Storage Blob Data Reader,Storage Queue Data Contributor,Storage File Data SMB Reader
+Question 13,single-correct,Which lifecycle management rule helps reduce storage cost?,4,1,0,Moving data to cooler tiers (Cool/Archive) saves costs.,Delete all data immediately,Move to Premium tier,Enable ZRS,Move data to Cool/Archive tier
+Question 14,single-correct,Which redundancy option keeps three copies in a single region?,1,1,0,LRS (Locally Redundant Storage) keeps three copies in one datacenter.,LRS,ZRS,GRS,RA-GRS
+Question 15,single-correct,Which redundancy option provides read access to the secondary region?,4,1,0,RA-GRS provides geo-redundancy with read access.,LRS,ZRS,GRS,RA-GRS
