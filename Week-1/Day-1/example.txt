@@ -1,0 +1,11 @@
+[ Management Group: Corp-MG ]
+        │  (Reader role here → applies to all below)
+        ▼
+[ Subscription: Finance-Sub ]
+        │  (Contributor role here → applies to RGs inside Finance-Sub)
+        ▼
+[ Resource Group: Finance-RG ]
+        │  (Storage Reader role here → applies to all storage accounts in RG)
+        ▼
+[ Resource: VM-Finance ]
+        │  (VM Contributor role here → applies only to this VM)
