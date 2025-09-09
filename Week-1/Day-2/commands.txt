@@ -2,15 +2,23 @@ az login
 az account list --output table
 az account clear ==> to clear old subscription
 az account set --subscription "<subscription-id>"
+
+az account set --subscription "30584b79-923f-4c17-9c43-31fdf64231b7"
 az group create --name MyResourceGroup --location eastus
 az group delete --name MyResourceGroup --yes --no-wait
 az vm list --output table
 
 az vm list-sizes --location eastus --output table   => check all sizes available in that region
 
-az vm create --resource-group MyResourceGroup --name MyVM --image Canonical:0001-com-ubuntu-server-jammy:22_04-lts-gen2:latest --size Standard_B1s --admin-username azureuser --generate-ssh-keys --public-ip-sku Standard
+az vm create --resource-group MyResourceGroup --name MyVM --image  Canonical:0001-com-ubuntu-server-jammy:22_04-lts-gen2:latest --size Standard_B1s 
+--admin-username azureuser --generate-ssh-keys --public-ip-sku Standard
+--location eastus
+
+chmod 400 <key-name>
 
 ssh -i C:\Users\om\.ssh\id_rsa azureuser@20.120.45.67=> for connection
+
+ssh -i id_rsa azureuser@20.120.45.67 MAC USER
 
 az vm show --resource-group MyResourceGroup --name MyVM --show-details --query publicIps  --output tsv
 
