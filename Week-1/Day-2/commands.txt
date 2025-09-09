@@ -1,0 +1,46 @@
+az login
+az account list --output table
+az account clear ==> to clear old subscription
+az account set --subscription "<subscription-id>"
+az group create --name MyResourceGroup --location eastus
+az group delete --name MyResourceGroup --yes --no-wait
+az vm list --output table
+
+az vm list-sizes --location eastus --output table   => check all sizes available in that region
+
+az vm create --resource-group MyResourceGroup --name MyVM --image Canonical:0001-com-ubuntu-server-jammy:22_04-lts-gen2:latest --size Standard_B1s --admin-username azureuser --generate-ssh-keys --public-ip-sku Standard
+
+ssh -i C:\Users\om\.ssh\id_rsa azureuser@20.120.45.67=> for connection
+
+az vm show --resource-group MyResourceGroup --name MyVM --show-details --query publicIps  --output tsv
+
+Notes for Mac users:
+
+Private key is at ~/.ssh/id_rsa
+
+Public key is at ~/.ssh/id_rsa.pub
+
+You don’t need -i ~/.ssh/id_rsa unless you’re using a different key.
+
+
+az vm start --resource-group MyResourceGroup --name MyVM
+az vm stop  --resource-group MyResourceGroup --name MyVM
+
+
+az vm delete --resource-group MyResourceGroup --name MyVM  --yes
+az vm delete --resource-group MyResourceGroup --name MyVM --yes --force-deletion all
+
+az group list --output table
+
+# List
+az storage account list --output table
+
+# Create
+az storage account create --name mystorageacct123 --resource-group MyResourceGroup --location eastus --sku Standard_LRS
+  
+az network vnet list --output table
+az network nsg list --output table
+
+
+az deployment group create --resource-group MyResourceGroup --template-file template.json --parameters storageAccountName=mystorageacct123
+
