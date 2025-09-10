@@ -1,0 +1,8 @@
+1.create a storage account==> python to upload a file
+2.Created an database -> connect with WOrkbench and then connect with python
+	-insert a record in the same (by creating a connection)
+
+pip install azure-storage-blob
+
+pip install mysql-connector-python
+
