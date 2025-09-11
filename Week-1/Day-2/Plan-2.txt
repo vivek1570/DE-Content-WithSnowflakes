@@ -1,0 +1,119 @@
+Day 2: Azure Storage for Data Engineering
+Time: 11:00 AM – 7:00 PM
+
+11:00 – 11:20 | Recap of Day 1
+
+Quick Q&A
+
+Highlight relevance of storage in data pipelines
+
+11:20 – 12:00 | Azure Storage Account Types
+
+General Purpose v1 vs v2
+
+Blob Storage Accounts
+
+Differences in features, pricing, and when to use
+
+12:00 – 12:45 | Blob Storage Deep Dive
+
+Containers & blobs
+
+Blob types: block, append, page
+
+Use cases for each
+
+12:45 – 1:00 | ADLS Gen2 Overview
+
+Hierarchical namespace & why it matters
+
+Comparison with Blob storage
+
+Demo: Create containers & folders in ADLS Gen2
+
+1:00 – 2:00 | Lunch Break
+
+2:00 – 3:00 | Other Storage Services
+
+Table Storage basics (NoSQL, key-value)
+
+Queue Storage basics (asynchronous messaging)
+
+Azure Files overview: SMB/NFS protocols
+
+3:00 – 3:45 | Authentication & Authorization
+
+Shared Key, SAS tokens
+
+Azure AD authentication
+
+RBAC roles for storage (Storage Blob Data Reader, Contributor, Owner)
+
+3:45 – 4:00 | Tea Break
+
+4:00 – 4:45 | Lab Block 1
+
+Create Blob Container and upload files (block vs append vs page blob)
+
+Setup ADLS Gen2 with hierarchical namespace
+
+Create folder structures (/bronze, /silver, /gold)
+
+4:45 – 5:30 | Lifecycle Management & Redundancy
+
+Lifecycle rules for cost optimization (hot → cool → archive)
+
+Redundancy options: LRS, ZRS, GRS, RA-GRS
+
+When to choose which
+
+5:30 – 6:15 | Lab Block 2
+
+Configure lifecycle rules for different data tiers
+
+Test redundancy setting by creating a storage account with GRS
+
+6:15 – 6:45 | Monitoring & Integration
+
+Metrics, diagnostics, and logs in storage
+
+Integrating ADLS with ADF (data pipelines) and Databricks (data lake analytics)
+
+6:45 – 7:00 | Daily Quiz – Day 2 Recap
+
+Quiz Questions:
+
+Which Azure Storage account type should be used for most modern workloads?
+a) GPv1
+b) GPv2
+c) Blob Storage
+d) Table Storage
+
+Which blob type is best for write-once append-only logs?
+a) Block
+b) Page
+c) Append
+d) Queue
+
+What does enabling Hierarchical Namespace in ADLS Gen2 provide?
+a) Faster redundancy
+b) File/folder-like directory management
+c) Lower costs
+d) SAS token support
+
+Which storage redundancy option replicates data across regions for disaster recovery?
+a) LRS
+b) ZRS
+c) GRS
+d) None
+
+Which authentication method integrates with RBAC for least-privilege access?
+a) Shared Key
+b) SAS Token
+c) Azure AD
+d) Access Policy
+
+True/False: Azure Files supports both SMB and NFS protocols.
+
+Scenario: You need to store raw IoT sensor data continuously streaming in real-time. Which storage type and redundancy option would you choose and why?
+
