@@ -116,3 +116,4 @@ d) Access Policy
 True/False: Azure Files supports both SMB and NFS protocols.
 
 Scenario: You need to store raw IoT sensor data continuously streaming in real-time. Which storage type and redundancy option would you choose and why?
+

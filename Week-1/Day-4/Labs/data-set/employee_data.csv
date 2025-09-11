@@ -1,0 +1,7 @@
+EmployeeID,FirstName,LastName,DepartmentID,Salary,HireDate,LastModifiedDate
+1,John,Doe,10,60000,2018-01-15,2025-01-01
+2,Jane,Smith,20,75000,2019-03-12,2025-01-05
+3,Bob,Johnson,10,55000,2020-07-22,2025-01-08
+4,Alice,Williams,30,80000,2021-02-11,2025-01-10
+5,Charlie,Brown,20,72000,2022-05-30,2025-01-11
+6,Diana,Miller,10,58000,2023-09-17,2025-01-13
